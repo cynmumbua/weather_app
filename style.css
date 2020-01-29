@@ -1,0 +1,134 @@
+body {
+  height: 100%;
+  background-color: cadetblue;
+  background: linear-gradient(
+    to right,
+    rgb(121, 145, 187),
+    rgb(174, 201, 248),
+    rgb(148, 186, 252)
+  );
+}
+.background {
+  height: 100vh;
+  min-height: 500px;
+  background: url(images/bg1.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+:root {
+  /* Color Theme Swatches in RGBA */
+  --white: rgb(255, 255, 255);
+  --grayBlue: rgba(44, 66, 81, 0.5);
+  --darkBlue: rgba(0, 115, 171, 0.5);
+  --orange: rgb(255, 255, 0, 0.5);
+  --ltGrey: rgba(223, 227, 228, 0.5);
+  --black: rgba(0, 0, 0, 1);
+}
+#title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+  color: var(--white);
+}
+#current {
+  background-color: var(--grayBlue);
+  color: var(--white);
+  resize: vertical;
+}
+#weatherIcon {
+  max-width: 100%;
+  height: auto;
+}
+#forecastTab li a.active {
+  border-bottom-color: transparent;
+  background-color: var(--orange);
+  color: var(--CFColors-darkGrey-rgba);
+  font-weight: bold;
+}
+#forecastTab li a {
+  border-bottom-color: transparent;
+  color: white;
+  font-weight: 400;
+}
+#location {
+  font-weight: bolder;
+}
+
+#main {
+  color: white;
+  padding: 20px;
+  resize: vertical;
+}
+#currentTemp {
+  font-size: 5em;
+  font-family: titling-gothic-fb-wide, sans-serif;
+  color: white;
+}
+
+#conditions {
+  background-color: var(--orange);
+  color: white;
+  padding: 20px;
+  resize: vertical;
+}
+
+#forecast {
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 20px;
+  resize: vertical;
+  font-size: 1em;
+}
+#footer {
+  font-size: 1em;
+  color: var(--white);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #title {
+    font-size: 1.5em;
+  }
+
+  #current,
+  #conditions {
+    font-size: 1.5em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  #title {
+    font-size: 2em;
+  }
+
+  #current,
+  #conditions {
+    font-size: 1.5em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #title {
+    font-size: 2em;
+  }
+
+  #current,
+  #forcast {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  #background {
+    font-size: 1em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

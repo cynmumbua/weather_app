@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/uwe4jcq.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <div class="d-flex flex-column h-100">
+        <div id="main" class="container">
+          <div class="row">
+            <div id="title" class="col text-center">
+              Weather Application
+            </div>
+          </div>
+          <div class="row">
+            <div id="current" class="col">
+              <div class="row">
+                <div id="temp" class="col-sm">
+                  <div id="location" class="row col d-md-inline-block">
+                    Nairobi, Kenya
+                  </div>
+                  <div class="row col d-md-inline-block" id="dayTime">
+                    Monday, 1000hrs
+                  </div>
+                  <div class="row col d-md-inline-block" id="summary">
+                    partly cloudy
+                  </div>
+                  <div class="row col d-md-inline-block" id="currentTemp">
+                    90&deg;
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <img
+                    id="weatherIcon"
+                    class="img-fluid"
+                    src="images/bg.jpg"
+                    alt="today's weather"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="conditions" class="col-md">
+              <div class="row">
+                <div id="preciptation" class="col-md">Precipitation 20%</div>
+              </div>
+              <div class="row">
+                <div id="humidity" class="col-md">Humidity 20%</div>
+              </div>
+              <div class="row">
+                <div id="wind" class="col-md">Wind 20mph</div>
+              </div>
+            </div>
+            <div id="forecast" class="col-md">
+              <ul class="nav nav-tabs" id="forecastTab">
+                <li class="nav-item">
+                  <a href="#weekly" data-toggle="tab" class="nav-link"
+                    >Hourly</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#daily" data-toggle="tab" class="nav-link active"
+                    >Weekly</a
+                  >
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane container active" id="daily">
+                  <table id="dailyForecast" width="100%"></table>
+                </div>
+                <div class="tab-pane container fade" id="weekly">
+                  <table id="weeklyForecast" width="100%"></table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="footer" class="col text-center">
+              <div class="col">
+                copyright
+              </div>
+            </div>
+            <div id="footer" class="col text-center">
+              <div class="col">
+                copyright
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
