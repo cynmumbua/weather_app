@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/uwe4jcq.css" />
 
+    <script src="keys.js"></script>
+    <script
+      type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false"
+    ></script>
+    <script src="main.js"></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -16,7 +22,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body onload="getLocation();">
     <div class="background">
       <div class="d-flex flex-column h-100">
         <div id="main" class="container">
