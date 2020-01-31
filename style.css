@@ -9,7 +9,6 @@ body {
   );
 }
 .background {
-  height: 100vh;
   min-height: 500px;
   background: url(images/bg1.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -39,8 +38,10 @@ body {
   resize: vertical;
 }
 #weatherIcon {
-  max-width: 100%;
-  height: auto;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: block;
 }
 #forecastTab li a.active {
   border-bottom-color: transparent;
@@ -74,7 +75,12 @@ body {
   padding: 20px;
   resize: vertical;
 }
-
+#selectDate {
+  background-color: var(--ltGrey);
+  color: white;
+  padding: 20px;
+  resize: vertical;
+}
 #forecast {
   background-color: var(--darkBlue);
   color: white;
@@ -86,7 +92,9 @@ body {
   font-size: 1em;
   color: var(--white);
 }
-
+p {
+  font-size: 20px;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #title {
