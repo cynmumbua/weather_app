@@ -72,42 +72,34 @@
                 <div id="wind" class="col-md">Wind 20mph</div>
               </div>
             </div>
+            <div id="selectDate" class="col-md">
+              Select Date: <br/> <input type="date" id="sDate" />
+              <button class="btn btn-primary" onclick="fetchFutureWeatherReport()">Check weather</button>
+              <p id="summaryDate"></p>
+              <p id="temperatureDate"></p>
+            </div>
             <div id="forecast" class="col-md">
               <ul class="nav nav-tabs" id="forecastTab">
                 <li class="nav-item">
                   <a href="#weekly" data-toggle="tab" class="nav-link"
-                    >Hourly</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#daily" data-toggle="tab" class="nav-link active"
                     >Weekly</a
                   >
                 </li>
               </ul>
 
               <div class="tab-content">
-                <div class="tab-pane container active" id="daily">
-                  <table id="dailyForecast" width="100%"></table>
-                </div>
-                <div class="tab-pane container fade" id="weekly">
+                <div class="tab-pane container active" id="weekly">
                   <table id="weeklyForecast" width="100%"></table>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div id="footer" class="col text-center">
-              <div class="col">
-                copyright
-              </div>
+          <!-- Footer -->
+          <footer class="page-footer font-small cyan darken-3">
+            <div class="footer-copyright text-center py-3">
+              © 2020 Copyright: Cynthia Muinde
             </div>
-            <div id="footer" class="col text-center">
-              <div class="col">
-                copyright
-              </div>
-            </div>
-          </div>
+          </footer>
         </div>
       </div>
     </div>
