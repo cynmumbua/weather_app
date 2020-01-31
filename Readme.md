@@ -10,7 +10,7 @@ This is a web application that allows a user to get the weather condition of the
 $ git clone https://github.com/cynmumbua/weather_app
 ```
 
-- Once cloned, extract the files and open index.htm;with your desired browser.
+- Once cloned, extract the files and open index.html with your desired browser (Please ensure that you enable location for desirable results).
 
 ## Features
 
